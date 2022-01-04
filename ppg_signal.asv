@@ -1,0 +1,14 @@
+% ve dang cua tin hieu
+fs=1000;
+Lfft=1024;
+ppg=load('ppg3.txt');
+plot(ppg);
+% ve fft cua tin hieu
+figure
+subplot(211)
+plot(linspace(0,fs,Lfft),abs(fft(ppg,Lfft)));
+N=200;
+h_ppg=fir1(N3,0.2*2/fs,'high');
+
+
+
